@@ -1,0 +1,258 @@
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> <!--Framework Bootstrap -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico?"> <!--Icono de pestaña-->
+	<title>Plan de estudios personalizado</title>
+</head>
+<body>
+	<div class="container-fluid"> <!--Encabezado-->
+    <div class="media">
+    	<a href="index.html">
+    		<br>
+    		<img src="logo_uni_ficticia.png" width="150" height="50" class="align-self-center mr-3 mt-1" alt="Inicio">
+    	</a>
+        <div class="media-body">
+            <h3 class="mt-0 text-left mt-3 font-weight-bold">Plan de Estudios personalizado </h3>
+            <h4 class="font-italic font-weight-bold">de Ingeniería en Sistemas Computacionales</h4>
+        </div>
+    </div>
+    <hr> <!--Aquí acaba el encabezado-->
+    <!--Empiezan las preguntas-->
+    <div class="pregresp">
+  		<div class="pregunta">14. ¿Te gusta ser líder en los equipos?<br /></div>
+  	<div class="respuestas">
+    	<input type="radio" name="emprendedores1" value="emprendedores1" id="emp1"/> Sí <br />
+    	<input type="radio" name="emprendedores1" value="no10" id="no10"/> No <br />
+  	</div>
+	</div>
+	<div class="pregresp">
+  		<div class="pregunta">15. ¿Te agrada organizar eventos o actividades?<br /></div>
+  	<div class="respuestas">
+    	<input type="radio" name="emprendedores2" value="emprendedores2" id="emp2"/> Sí <br />
+    	<input type="radio" name="emprendedores2" value="no11" id="no11"/> No <br />
+  	</div>
+	</div>
+		<div class="pregresp">
+  		<div class="pregunta">16. ¿Te preocupas por el medio ambiente?<br /></div>
+  	<div class="respuestas">
+    	<input type="radio" name="emprendedores3" value="emprendedores3" id="emp3"/> Sí <br />
+    	<input type="radio" name="emprendedores3" value="no12" id="no12"/> No <br />
+  	</div>
+	</div>
+		<div class="pregresp">
+  		<div class="pregunta">17. ¿Tienes un plan de vida?<br /></div>
+  	<div class="respuestas">
+    	<input type="radio" name="emprendedores4" value="emprendedores4" id="emp4"/> Sí <br />
+    	<input type="radio" name="emprendedores4" value="no13" id="no13"/> No <br />
+  	</div>
+	</div>
+	<div class="pregresp">
+  		<div class="pregunta">18. ¿Te gustaría aprender a modelar en 3D?<br /></div>
+  	<div class="respuestas">
+    	<input type="radio" name="tecnico1" value="tecnico1" id="tecnico1"/> Sí <br />
+    	<input type="radio" name="tecnico1" value="no14" id="no14"/> No <br />
+  	</div>
+	</div>
+	<div class="pregresp">
+  		<div class="pregunta">19. ¿Te llama la atención cómo funcionan los robots?<br /></div>
+  	<div class="respuestas">
+    	<input type="radio" name="tecnico2" value="tecnico2" id="tecnico2"/> Sí <br />
+    	<input type="radio" name="tecnico2" value="no15" id="no15"/> No <br />
+  	</div>
+	</div>
+	<div class="pregresp">
+  		<div class="pregunta">20. ¿Te gustaría crear tu propio videojuego?<br /></div>
+  	<div class="respuestas">
+    	<input type="radio" name="tecnico3" value="tecnico3" id="tecnico3"/> Sí <br />
+    	<input type="radio" name="tecnico3" value="no16" id="no16"/> No <br />
+  	</div>
+	</div>
+	<div class="pregresp">
+  		<div class="pregunta">21. ¿Te agradar ver obras de arte, visitar exposiciones o pintar?<br /></div>
+  	<div class="respuestas">
+    	<input type="radio" name="cultura1" value="cultura1" id="cultura1"/> Sí <br />
+    	<input type="radio" name="cultura1" value="no17" id="no17"/> No <br />
+  	</div>
+	</div>
+	<div class="pregresp">
+  		<div class="pregunta">22. ¿Sabes de historia Universal o te gustaría conocerla?<br /></div>
+  	<div class="respuestas">
+    	<input type="radio" name="cultura2" value="cultura2" id="cultura2"/> Sí <br />
+    	<input type="radio" name="cultura2" value="no18" id="no18"/> No <br />
+  	</div>
+	</div>
+	<div class="pregresp">
+  		<div class="pregunta">23. ¿Te gusta leer libros, revistas o periódicos?<br /></div>
+  	<div class="respuestas">
+    	<input type="radio" name="cultura3" value="cultura3" id="cultura3"/> Sí <br />
+    	<input type="radio" name="cultura3" value="no19" id="no19"/> No <br />
+  	</div>
+	</div>
+	<div class="pregresp">
+  		<div class="pregunta">24. ¿Disfrutas ir al cine y ver películas? <br /></div>
+  	<div class="respuestas">
+    	<input type="radio" name="cultura4" value="cultura4" id="cultura4"/> Sí <br />
+    	<input type="radio" name="cultura4" value="no20" id="no20"/> No <br />
+  	</div>
+	</div>
+	<br>
+	<button type="button" class="btn btn-secondary float-right" id="botonSiguiente1">Siguiente</button>
+	<script type="text/javascript">
+		let materiasquefaltan = localStorage.getItem("materiasquefaltan");
+		
+		var MO1 = new Number('0');
+
+		
+		$("#botonSiguiente1").click(function(){
+		var MOPTATIVAS = "";
+		var OP1,OP2,OP3,OP4,OP5,OP6,OP7,OP8,OP9,OP10,OP11 = ""; //11 materias
+		MO = materiasquefaltan; //nueva variable le paso el valor de MO de pagina2.html
+
+       
+        var names = {};
+			$('input:radio').each(function() { 
+     		 names[$(this).attr('name')] = true;
+			});
+			var count = 0;
+			$.each(names, function() { //Para contarlos
+      			count++;
+			});
+			if($('input:radio:checked').length == count) {
+
+		//MATERIAS OPTATIVAS
+				//EMPRENDEDORES
+				if (($("#emp1").is(":checked"))){ 
+					OP1 = "Humanismo y Liderazgo. ";
+					MO = MO-1;
+					
+				}else if(($("#no10").is(":checked"))){ 
+					OP1 = "-";
+				}
+				if (($("#emp2").is(":checked"))){ 
+					OP2 = "Desarrollo de emprendedores. ";
+					MO = MO-1;
+					
+				}else if(($("#no11").is(":checked"))){ 
+					OP2 = "-";
+				}
+				if (($("#emp3").is(":checked"))){ 
+					OP3 = "Desarrollo sostenible. ";
+					MO = MO-1;
+					
+				}else if(($("#no12").is(":checked"))){ 
+					OP3 = "-";
+				}
+				if (($("#emp4").is(":checked"))){ 
+					OP4 = "Persona y proyecto de vida. ";
+					MO = MO-1;
+					
+				}else if(($("#no13").is(":checked"))){ 
+					OP4 = "-";
+				}
+				//TÉCNICO
+				if (($("#tecnico1").is(":checked"))){ 
+					OP5 = "Dibujo técnico. ";
+					MO = MO-1;
+					
+				}else if(($("#no14").is(":checked"))){ 
+					OP5 = "-";
+				}if (($("#tecnico2").is(":checked")) && (MO<=15)){ 
+					OP6 = "Robótica. ";
+					MO = MO-1;
+					
+				}else if(($("#no15").is(":checked"))){ 
+					OP6 = "-";
+				}
+				if (($("#tecnico3").is(":checked")) && (MO<=15)){ 
+					OP7 = "Desarrollo de videojuegos. ";
+					MO = MO-1;
+					
+				}else if(($("#no16").is(":checked"))){ 
+					OP7 = "-";
+				}
+				//CULTURA
+				if (($("#cultura1").is(":checked")) && (MO<=15)){ 
+					OP8 = "Arte. ";
+					MO = MO-1;
+					
+				}else if(($("#no17").is(":checked"))){ 
+					OP8 = "-";
+				}
+				if (($("#cultura2").is(":checked")) && (MO<=15)){ 
+					OP9 = "Historia. ";
+					MO = MO-1;
+					
+				}else if(($("#no18").is(":checked"))){ 
+					OP9 = "-";
+				}
+				if (($("#cultura3").is(":checked")) && (MO<=15)){ 
+					OP10 = "Literatura. ";
+					MO = MO-1;
+					
+				}else if(($("#no19").is(":checked"))){ 
+					OP10 = "-";
+				}
+				if (($("#cultura4").is(":checked")) && (MO<=15)){ 
+					OP11 = "Taller de cine. ";
+					MO = MO-1;
+				}else if(($("#no20").is(":checked"))){ 
+					OP11 = "-";
+				}
+				//Verifico que aún me quede espacio
+				MO1=materiasquefaltan-MO;
+				if(MO<0){ //si escojo demás
+					alert("Necesitas quitar Sí a "+MO+" preguntas. Ya pasaste el límite de materias");
+				}
+				if(MO>0){ //si me falta escoger
+					alert("Te hace falta contestar con Sí "+MO+" preguntas para tener un mejor perfil para tus materias.");
+				}if(MO==0){
+				
+        			MOPTATIVAS = OP1+OP2+OP3+OP4+OP5+OP6+OP7+OP8+OP9+OP10+OP11; //Junto las optativas que fueron afirmativas
+        			function guardar_localStorage(){
+									let dato ={
+										materiasoptativas: ""
+									}
+								};
+					let materiasoptativas = "";
+					localStorage.setItem("materiasoptativas", JSON.stringify(MOPTATIVAS)); //guardo en localStorage
+        			let materiasformacion = localStorage.getItem("materiasformacion"); 
+       				console.log(materiasformacion);
+        
+        
+        			location.assign('final2.html'); //Me dirige al resultado
+
+				}
+				}else{
+				//Faltan preguntas por contestar
+				alert("Contesta todas las preguntas.");
+			}
+
+				//location.assign('final2.html');
+			});
+	</script>
+
+
+</body>
+</html>
+<style type="text/css"> 
+	.pregresp {
+	border: 1px solid #ffcdd2;
+	padding: 10px;
+	margin: 10px;
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	}
+
+	.pregunta {
+	color: #000000;
+	}
+
+	.respuestas {
+	color: #000000;
+	font-weight: lighter;
+	}
+</style>	
